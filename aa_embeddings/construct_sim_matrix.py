@@ -20,10 +20,10 @@ def main():
 
     matrix = np.zeros((len(aa_d), len(aa_d)))
     aa_letters = list(aa_d.keys())
-    for i, aa1 in enumerate(aa_letters):
-        for j, aa2 in enumerate(aa_letters[i+1:]):
-            matrix[i][j+i+1] = similarities[aa1][aa2]
-            matrix[j+i+1][i] = similarities[aa1][aa2]
+    for i in range(len(aa_letters)):
+        for j in range(len(aa_letters)):
+            matrix[i][j] = similarities[aa_letters[i]][aa_letters[j]]
+            
     with open('similarity_matrix.json', 'w') as f:
         json.dump({'aa\'s': aa_letters, 'matrix': matrix.tolist()}, f, indent=4)
     

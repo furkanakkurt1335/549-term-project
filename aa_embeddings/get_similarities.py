@@ -19,6 +19,8 @@ def main():
     for aa in amino_acids:
         if aa in embeddings:
             filtered_amino_acids.append(aa)
+        else:
+            print(aa)
 
     amino_acids = filtered_amino_acids
 
@@ -26,7 +28,7 @@ def main():
     for i, aa1 in enumerate(amino_acids):
         if aa1 not in similarity_d:
             similarity_d[aa1] = {}
-        for j, aa2 in enumerate(amino_acids[i+1:]):
+        for j, aa2 in enumerate(amino_acids[i:]):
             if aa2 not in similarity_d:
                 similarity_d[aa2] = {}
             sim_t = cosine_similarity([embeddings[aa1]], [embeddings[aa2]])[0][0]
