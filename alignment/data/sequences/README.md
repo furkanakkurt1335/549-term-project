@@ -1,0 +1,1 @@
+This folder includes the files for BALIBASE alignment benchmarks. Sequences folder includes the sequences in each benchmark set in fasta format. Reference alignments can be found in [PEbA paper](https://github.com/mgtools/PEbA/tree/master/data)
