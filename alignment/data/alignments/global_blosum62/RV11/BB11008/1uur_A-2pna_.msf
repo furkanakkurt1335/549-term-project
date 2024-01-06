@@ -1,0 +1,43 @@
+PileUp
+
+
+
+   MSF: 503  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1uur_A oo  Len:  503  Start/End:  0,458
+ Name: 2pna_  oo  Len:  503  Start/End:  0,458
+
+//
+
+
+
+1uur_A      SSPQPILDTI YKLLSEQEQT LVQMIHEQSL LLNRLPPTLD ENSLAPLKSL 
+2pna_       .......... .......... .......... .......... .......... 
+
+1uur_A      SQKQITLSGQ MNTEMSALDA TKKGMILEPT DLAKLFALKQ DLQIQFKQLS 
+2pna_       .......... .......... .......... .......... .......... 
+
+1uur_A      LLHNEIQSIL NPQHSAPKPN VALVLKSQPF PVVISKGKQL GENQLVVLVL 
+2pna_       .......... .......... .......... .......... .......... 
+
+1uur_A      TGARSNFHIN GPVKATMICD SHPPTTPLEM DSQPIYPATL TAHFPLKFLA 
+2pna_       .......... .......... .......... .......... .......... 
+
+1uur_A      GTRKCSVNLK FGVNIRDLDN VTTTVESDAS NPFVVITNEC QWEGSAGVLL 
+2pna_       .......... .......... .......... .......... .......... 
+
+1uur_A      KKDAFDGQLE ITWAQFINTL QRHFLIATKQ DPVRPKRPLS SYDLKYIQTH 
+2pna_       .......... .........L Q......... .......... .......... 
+
+1uur_A      FFGNRSIIHQ QDFDKFWVWF GKSMQTLRYQ RHISTLWQEG IIYGYMGRQE 
+2pna_       .......... ...DAEWYW. .......... .......... ...GDISREE 
+
+1uur_A      VNDALQNQDP GTFIIRFSER NPGQFGIAYI GVEMPARIKH YLVQPNDTAA 
+2pna_       VNEKLRDTAD GTFLVR..DA STKMHGDYTL TLRKGGNNKL IKIFHRD... 
+
+1uur_A      AKKTFPDFLS EHSQFVNLLQ WTKDTNGAPR FLKLHKDTAL GSFAPKRTAP 
+2pna_       GKYGFSDPLT .......... ....FNSVVE LINHYRNESL AQYNPKLDVK 
+
+1uur_A      V..PVGGX
+2pna_       LLYPVSKY
+

@@ -1,0 +1,28 @@
+PileUp
+
+
+
+   MSF: 234  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1cvs_C oo  Len:  234  Start/End:  0,213
+ Name: 1tlk_  oo  Len:  234  Start/End:  0,213
+
+//
+
+
+
+1cvs_C      MPVAPYWTSP EKMEKKLHAV PAAKTVKFKC PSSGTPQPTL RWLKNGKEFK 
+1tlk_       V......... ..AEEKPHVK P......... .......... .......... 
+
+1cvs_C      PDHRIGGYKV RYATWSIIMD SVVPSDKGNY TCIVENEYGS INHTYQLDVV 
+1tlk_       .......... .YFTKTIL.. .......... .......... .....DMDVV 
+
+1cvs_C      ERSPHRPILQ AGLPANKTVA LGSNVEFMCK VYSDPQPHIQ WLKHIEVNGS 
+1tlk_       E......... .......... .GSAARFDCK VEGYPDPEVM WFK....... 
+
+1cvs_C      KIGPDNLPYV QILKTAGVNT TDKEMEVLHL RNVSFEDAGE YTCLAGNSIG 
+1tlk_       ....DDNP.V KESRHFQIDY DEEGNCSLTI SEVCGDDDAK YTCKAVNSLG 
+
+1cvs_C      LSHHSAWLTV ..L
+1tlk_       EATCTAELLV ETM
+

@@ -1,0 +1,25 @@
+PileUp
+
+
+
+   MSF: 218  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1hjd_A oo  Len:  218  Start/End:  0,199
+ Name: 1ycs_B oo  Len:  218  Start/End:  0,199
+
+//
+
+
+
+1hjd_A      .....ADRKL .......... .......... .......... .......... 
+1ycs_B      PLALLLDSSL EGEFDLVQRI IYEVDDPSLP NDEGITALHN AVCAGHTEIV 
+
+1hjd_A      .......... .CADQECSHP ISMAVALQDY MAPDCRFLTI HRGQVVYVFS 
+1ycs_B      KFLVQFGVNV NAADSDGWTP LHCAASCNNV QV..CKFL.V ESGAAVFAMT 
+
+1hjd_A      .......... .......... .......... ..KLKGRGRL F..WGGSVQG 
+1ycs_B      YSDMQTAADK CEEMEEGYTQ CSQFLYGVQE KMGIMNKGVI YALWDYEPQN 
+
+1hjd_A      DYYGDLAARL GYFPSSIVRE DQ........ TLKPGKVDVK TDKWDFYCQ
+1ycs_B      D..DELPMKE GDCMTIIHRE DEDEIEWWWA RLNDKEGYVP RNLLGLY.P
+

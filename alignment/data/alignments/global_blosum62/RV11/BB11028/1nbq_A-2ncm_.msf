@@ -1,0 +1,28 @@
+PileUp
+
+
+
+   MSF: 230  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1nbq_A oo  Len:  230  Start/End:  0,210
+ Name: 2ncm_  oo  Len:  230  Start/End:  0,210
+
+//
+
+
+
+1nbq_A      AMGSVTVHSS EPEVRIPENN PVKLSCAYSG FSSPR.VEWK FDQGDTTRLV 
+2ncm_       RVLQVDIVPS QGEISVGESK ..FFLCQVAG DAKDKDISWF SPNGE..KLS 
+
+1nbq_A      CYNNKITASY EDRVTFLPTG ITFKSVTRED TGTYTCMVSE EGGNSYGEVK 
+2ncm_       PNQQRISVVW NDDDS...ST LTIYNANIDD AGIYKCVVTA EDGTQ..... 
+
+1nbq_A      VKLIVLVPPS KPTVNIPSSA TIGNRAVLTC SEQDGSPPSE YTWFKDGIVM 
+2ncm_       .........S EATVNV.... .......... .......... .......... 
+
+1nbq_A      PTNPKSTRAF SNSSYVLNPT TGELVFDPLS ASDTGEYSCE ARNGYGTPMT 
+2ncm_       .......... .......... .......... .......... .......... 
+
+1nbq_A      SNAVRMEAVE
+2ncm_       ......KIFQ
+

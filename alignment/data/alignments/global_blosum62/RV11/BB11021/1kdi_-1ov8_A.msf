@@ -1,0 +1,22 @@
+PileUp
+
+
+
+   MSF: 156  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1kdi_  oo  Len:  156  Start/End:  0,142
+ Name: 1ov8_A oo  Len:  156  Start/End:  0,142
+
+//
+
+
+
+1kdi_       AKVEVGDEVG N......... ......FKFY PDSITVSAGE AVEFTLVGET 
+1ov8_A      ANAPGGSNVV NETPAQTVEV RAAPDALAFA QTSLSLPANT VVRLDFVNQN 
+
+1kdi_       G....HNIVF DIPAGAPGTV ASELKAASMD ENDLLSEDEP .......... 
+1ov8_A      NLGVQHNWVL ...VNGGDDV AAAVNTAAQN NADALFVPPP DTPNALAWTA 
+
+1kdi_       ........SF KAKVSTPGTY TFYCT..PHK SANMKGTLTV .K
+1ov8_A      MLNAGESGSV TFRTPAPGTY LYICTFPGHY LAGMKGTLTV TP
+

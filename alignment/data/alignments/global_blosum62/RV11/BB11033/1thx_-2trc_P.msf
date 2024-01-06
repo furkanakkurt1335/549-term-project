@@ -1,0 +1,28 @@
+PileUp
+
+
+
+   MSF: 240  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1thx_  oo  Len:  240  Start/End:  0,219
+ Name: 2trc_P oo  Len:  240  Start/End:  0,219
+
+//
+
+
+
+1thx_       S........K GVIT...... .......... .......... .......... 
+2trc_P      EGQATHTGPK GVINDWRKFK LESEDGDSIP PSKKEILRQM SSPQSRDDKD 
+
+1thx_       .......... .......ITD AEFES..... .......... .......... 
+2trc_P      SKERXSRKXS IQEYELIHQD KEDEGCLRKY RRQCXQDXHQ KLSFGPRYGF 
+
+1thx_       .......... .EVLKAEQPV ...LVYFWAS WCGPCQLMSP LINLAANTYS 
+2trc_P      VYELETGEQF LETIEKEQKV TTIVVNIYED GVRGCDALNS SLECLAAEY. 
+
+1thx_       DRLKVVKLEI DPNPTTVKKY KVEGVPALRL VKGEQILDST EGV...ISKD 
+2trc_P      PXVKFCKIRA S.NTGAGDRF SSDVLPTLLV YKGGELISNF ISVAEQFAED 
+
+1thx_       KLLSFLDTHL N........
+2trc_P      FFAADVESFL NEYGLLPER
+

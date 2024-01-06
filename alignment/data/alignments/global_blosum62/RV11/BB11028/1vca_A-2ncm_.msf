@@ -1,0 +1,28 @@
+PileUp
+
+
+
+   MSF: 228  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1vca_A oo  Len:  228  Start/End:  0,208
+ Name: 2ncm_  oo  Len:  228  Start/End:  0,208
+
+//
+
+
+
+1vca_A      ..FKIETTPE SRYLAQIGDS VSLTCSTTG. CESPFFSWRT QIDSPLN... 
+2ncm_       RVLQVDIVPS QGEIS.VGES KFFLCQVAGD AKDKDISWFS PNGEKLSPNQ 
+
+1vca_A      ...GKVTNEG TTSTLTMNPV SFGNEHSYLC TATCESRKLE KGIQVEIYSF 
+2ncm_       QRISVVWNDD DSSTLTIYNA NIDDAGIYKC VVTAE..... .......... 
+
+1vca_A      PKDPEIHLSG PLEAGKPITV KCSVADVYPF DRLEIDLLKG DHLMKSQEFL 
+2ncm_       .......... .......... .......... .......... .......... 
+
+1vca_A      EDADRKSLET KSLEVTFTPV IEDIGKVLVC RAKLHIDEMD SVPTVRQAVK 
+2ncm_       .......... .......... .......... ......DGTQ SEATV..... 
+
+1vca_A      ELQVYISP
+2ncm_       ..NVKIFQ
+

@@ -1,0 +1,25 @@
+PileUp
+
+
+
+   MSF: 196  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1rhf_A oo  Len:  196  Start/End:  0,179
+ Name: 2ncm_  oo  Len:  196  Start/End:  0,179
+
+//
+
+
+
+1rhf_A      GA.PVKLTVS QGQPVKLNCS VEGXEEPDIQ WVKDGAVVQN LDQLYIPVSE 
+2ncm_       RVLQVDIVPS QGE....... .......... .......... .....ISVGE 
+
+1rhf_A      QHWIGFLSLK SVERSDAGRY WCQVE.DGGE TEISQPVWLT VEGVPFFTVE 
+2ncm_       SKF....... .........F LCQVAGDAKD KDIS...WFS .......... 
+
+1rhf_A      PKDLAVPPNA PFQLSCEAVG PPEPVTIVWW RGTTKIGGPA PSPSVLNVTG 
+2ncm_       PNGEKLSPN. .......... .QQRISVVW. ......NDDD SSTLTIYNAN 
+
+1rhf_A      VTQSTXFSCE AHNLKGLASS RTATVHL.Q
+2ncm_       IDDAGIYKCV VTAEDGTQSE ATVNVKIFQ
+

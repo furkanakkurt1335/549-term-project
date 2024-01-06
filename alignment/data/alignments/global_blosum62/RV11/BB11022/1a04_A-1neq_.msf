@@ -1,0 +1,28 @@
+PileUp
+
+
+
+   MSF: 225  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1a04_A oo  Len:  225  Start/End:  0,205
+ Name: 1neq_  oo  Len:  225  Start/End:  0,205
+
+//
+
+
+
+1a04_A      EPATILLIDD HPMLRTGVKQ LISMAPDITV VGEASNGEQG IELAESLDPD 
+1neq_       .......... .......... .......... ...CSN.... .......... 
+
+1a04_A      LILLDLNMPG MNGLETLDKL REKSLSGRIV VFSVSNHEED VVTALKRGAD 
+1neq_       .......... .......EKA RDW....... ......HRAD VIAGLKK... 
+
+1a04_A      GYLLKDMEPE DLLKALHQAA AGEMVLSEAL TPVLAASLER DVNQLTPRER 
+1neq_       ....RKLSLS ALSRQFGYAP T......... ..TLANALER H....WPKGE 
+
+1a04_A      DILKLIAQGL PNKMIARRLD ITESTVKVHV KHMLKKMKLK SRVEAAVWVH 
+1neq_       QI...IANAL ETK....... .......... ....PEVIWP SRYQAGE... 
+
+1a04_A      QERIF
+1neq_       .....
+

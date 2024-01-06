@@ -1,0 +1,34 @@
+PileUp
+
+
+
+   MSF: 334  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1bbt_ab oo  Len:  334  Start/End:  0,304
+ Name: 1mec_aa oo  Len:  334  Start/End:  0,304
+
+//
+
+
+
+1bbt_ab      LLEDRILTTR NGHTTSTTQS SVGVTYGYAT AEDFVSGPNT SGLETRVVQA 
+1mec_aa      GVEN...... .........A EKGVTENTDA TADFVAQP.. ......VYLP 
+
+1bbt_ab      ERFFKTHLFD WVTSDSFGRC HL....LE.. .LPTDHKGVY GSL....... 
+1mec_aa      ENQTKVAFF. YDRSSPIGRF AVKSGSLESG FAPFSNKACP NSVILTPGPQ 
+
+1bbt_ab      .TDSYAYMRN GWDVEVTAVG N......... ...QFNGGCL LVAMVPELCS 
+1mec_aa      FDPAYDQLRP QRLTEIWGNG NEETSEVFPL KTKQDYSFCL FSPFVYYKCD 
+
+1bbt_ab      IQKRELYQLT LFPHQF.... .......INP RTNMTAHI.. TVPFVGVNRY 
+1mec_aa      L......EVT LSPHTSGAHG LLVRWCPTGT PTKPTTQVLH EVSSLSEGRT 
+
+1bbt_ab      DQYKVHKPWT .....LVVMV VAPLTV.... .........N TEG....... 
+1mec_aa      PQVYSAGPGT SNQISFVVPY NSPLSVLPAV WYNGHKRFDN TGDLGIAPNS 
+
+1bbt_ab      .......... APQIKVYANI APTNVHVAGE FPS....... .......... 
+1mec_aa      DFGTLFFAGT KPDIKFTVYL RYKNMRVFCP RPTVFFPWPT SGDKIDMTPR 
+
+1bbt_ab      ..KE
+1mec_aa      AGVL
+

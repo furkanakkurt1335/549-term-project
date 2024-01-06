@@ -1,0 +1,25 @@
+PileUp
+
+
+
+   MSF: 170  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1kng_A oo  Len:  170  Start/End:  0,155
+ Name: 1mek_  oo  Len:  170  Start/End:  0,155
+
+//
+
+
+
+1kng_A      RPAPQTALPP LEGLQADNVQ V...PGLDPA AFKGKVSLVN VWASWCVPCH 
+1mek_       .DAPE..... ....EEDHVL VLRKSNFAEA LAAHKYLLVE FYAPWCGHCK 
+
+1kng_A      DEAPLLTE.L GKDK....RF QLVGINYKDA ADNARRFLGR YGNP...FGR 
+1mek_       ALAPEYAKAA GKLKAEGSEI RLAKVDATEE SDLAQQY.GV RGYPTIKFFR 
+
+1kng_A      VGVDANGRAS IEWGVYGVPE TFVVGREGTI VYKLVGPITP DNLRSVLLPQ 
+1mek_       NGDTAS.... ........PK EYTAGREA.. .......... DDIVNWLKKR 
+
+1kng_A      MEKAL
+1mek_       TGPAA
+

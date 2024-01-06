@@ -1,0 +1,85 @@
+PileUp
+
+
+
+   MSF: 1317  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: YB00_YEAST oo  Len:  1317  Start/End:  0,1198
+ Name: yhx8_yeast oo  Len:  1317  Start/End:  0,1198
+
+//
+
+
+
+YB00_YEAST      MNMDSGITSS HGSMDKTQKQ SSEWAANQKH NQRVENTRVL MGPAVPAMPP 
+yhx8_yeast      .......... .......... .......... .......... .......... 
+
+YB00_YEAST      VPSNFPPVPT GTIMSPQLSP FPDHRLRHHP LAHMMPADKN FLAYNMESMN 
+yhx8_yeast      .......... .......... .......... .......... .......... 
+
+YB00_YEAST      MDSGITSSHG SMDKTQKQSS EWAANQKHNQ RVENTRVLMG PAVPAMPPVP 
+yhx8_yeast      .......... .........T SWVRED.... .......... .......... 
+
+YB00_YEAST      SNFPPVPTGT IMSPQLSPFP DHRLRHHPLA HMMPADKNFL AYNMESFKSR 
+yhx8_yeast      .......... .......... .......... .......... ....GSFKS. 
+
+YB00_YEAST      VTKACDYCRK RKIRCTEIEP ISGKCRNCIK YNKDCTFHFH EELKRRREEA 
+yhx8_yeast      .......... .......... .......... .......... .......... 
+
+YB00_YEAST      LNNKGNGKSV KKPRLDKENK FKDENFDIAV RSRNTSSTDS SPKLHTNLSQ 
+yhx8_yeast      .......... .......... .......... .......... .......... 
+
+YB00_YEAST      EYIGVSAGKS ASDKEDTWPD FVPIDRTVLE KIELNHTKVA GKVFVLEEIC 
+yhx8_yeast      .......... .......... ...IDRSLLD RFIAAYFKHN HRLF...... 
+
+YB00_YEAST      KNMKGTIEKL AEKSKIDVID KEYMKRPKRK QYSKALLTKQ KMFHFRQNVL 
+yhx8_yeast      .......... ......PMID K......... .......... .........I 
+
+YB00_YEAST      SHLTDEEFLS PINEMFTTTF KYSILQTKLV LDFSFRSASS PSSDNILYPL 
+yhx8_yeast      AFLNDAATIT DFERLY.... .......... .......... ...DNKNYP. 
+
+YB00_YEAST      PRLAIAKRLL KNIKCPSLAS LLHIVDVDQC LQFADVHFDP AKGRLTSSQA 
+yhx8_yeast      .......... .......... .......... .......... ......DSFV 
+
+YB00_YEAST      FLLNICLCLG ATVTNFEEKQ ELVDEDNHET YYFEKFELWR LRSFTFLNSV 
+yhx8_yeast      FKVYMIMAIG CTTL...QRA GMVSQD..EE CLSEHLAFLA MKKF...... 
+
+YB00_YEAST      YYYHKLSVAR ADMTALKALL LLAKFAQQKI SASSAVKVLS VAIKVALDLR 
+yhx8_yeast      ....RSVIIL QDIETVRCLL LLGIYSFFEP KGSSSWTISG IIMRLTIGLG 
+
+YB00_YEAST      LNLHSTYEDL E....LDEII KRRRLW.CYC FSTDKFFSVV LSRPPFLKEE 
+yhx8_yeast      LNRELTAKKL KSMSALEAEA RYRVFWSAYC F..ERLVCTS LGRISGIDDE 
+
+YB00_YEAST      NTDV.LTDES YVELFRDKIL PNLSIKYDDS KLEGVKDIVS VVNLLANHLE 
+yhx8_yeast      DITVPLPRAL YVD....... .....ERDD. .LEMTKLMIS .......... 
+
+YB00_YEAST      YVPYIQSYFL SRLSLIESQI YYSCFSIRTT LDDTLDEIIE NVLENQKALD 
+yhx8_yeast      .......... ..LRKMGGRI YKQVHSVSAG RQKLTIE... ...QKQEIIS 
+
+YB00_YEAST      RMRDDLPTIL SLENYKENMR ILSLDSSKLD FEVSCCTTIL LHLRWYHQKI 
+yhx8_yeast      GLRKEL.... .......... .......... .......... .......... 
+
+YB00_YEAST      TLSLFVISII GDNLDQRESS RHDIAEIIRR SRLDFKRNCI EVLNILKDFE 
+yhx8_yeast      .......... .DEIYSRESE RRK....LKK SQMD...... .......... 
+
+YB00_YEAST      YYPTVQNEFL YFSLTTVFSM FLYLSEIMVN DEHAMETGYI IGLLRDTHTR 
+yhx8_yeast      .....QVERE NNSTTNVIS. .FHSSEI... .......... .......... 
+
+YB00_YEAST      MLGSEERCLS VHNLKWQTSL FFYTFFLRST MEKFNLTSKY AKFYAFDSNY 
+yhx8_yeast      .......... .....W.... .......... .....LAMRY SQ........ 
+
+YB00_YEAST      YEGVLNRLVK HTRESKDDMV ELLKTSFINK EKMAAFGSFV TEDQEKMEVS 
+yhx8_yeast      .......... .......... .......... .......... .......... 
+
+YB00_YEAST      FNIFNEITIQ DLNFLQFSSI PKLWENKTLE PGEEYHHSNG TNTDNNETTG 
+yhx8_yeast      ........LQ ILLYRPSALM PK........ .......... PPIDSLSTLG 
+
+YB00_YEAST      ADDTDDNNNN NNNNNKNGNN SSSTINNNNN NYSNSNNNDN DNNINDDDDD 
+yhx8_yeast      .......... .......... .......... .......... .......... 
+
+YB00_YEAST      DDDDDDDDDD DDDDDDNDDD YSNNGADDDE EDDDYDRSLF PTGLASLLDA 
+yhx8_yeast      .......... .......... .......... .......... .......... 
+
+YB00_YEAST      SYPERTANDY RDENEQSNKL FEKIEGHLEH GVFFYDRDFF FKNVCVKM
+yhx8_yeast      .......... .......... .......... .......... ......EF
+

@@ -1,0 +1,22 @@
+PileUp
+
+
+
+   MSF: 139  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1mw4_A oo  Len:  139  Start/End:  0,127
+ Name: 2pna_  oo  Len:  139  Start/End:  0,127
+
+//
+
+
+
+1mw4_A      GSPASGTSLS AAIHRTQLWF HGRISREESQ RLIGQQGLVD GLFLVRESQR 
+2pna_       LQDAE..... ........WY WGDISREEVN EKL..RDTAD GTFLVRDAST 
+
+1mw4_A      NPQG.FVLSL CHLQKVKHYL ILPSEEEGRL YFSMDDGQTR FTDLLQLVEF 
+2pna_       KMHGDYTLTL ..RKGGNNKL IKIFHRDGKY GFS..DPLT. FNSVVELIN. 
+
+1mw4_A      HQLNRGI... ...LPCLLRH CCTRVAL
+2pna_       HYRNESLAQY NPKLDVKLLY PVSK..Y
+

@@ -1,0 +1,25 @@
+PileUp
+
+
+
+   MSF: 193  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1jfu_A oo  Len:  193  Start/End:  0,176
+ Name: 1thx_  oo  Len:  193  Start/End:  0,176
+
+//
+
+
+
+1jfu_A      TGDPACRAAV ATAQKIAPLA HGEVAALTMA SAPLKLPDLA FEDADGKPKK 
+1thx_       .......... .......... .........S KGVITITDAE FESEVLKAE. 
+
+1jfu_A      LSDFRGKTLL VNLWATWCVP CRKEMPALDE LQGKLSGPNF EVVAINIDTR 
+1thx_       ......QPVL VYFWASWCGP CQLMSPLIN. LAANTYSDRL KVVKLEIDP. 
+
+1jfu_A      DPEKPKTFLK EANLTRLGYF NDQKAKVFQD LKAIGRALGM PTSVLVDPQG 
+1thx_       NPTTVKKYKV E......... .......... ........GV PALRLV..KG 
+
+1jfu_A      CEIATIAGPA EWASEDALKL IRAATG
+1thx_       EQILD.STEG VISKDKLLSF LDTHLN
+

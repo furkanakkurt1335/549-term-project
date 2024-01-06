@@ -1,0 +1,43 @@
+PileUp
+
+
+
+   MSF: 502  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1mw4_A oo  Len:  502  Start/End:  0,457
+ Name: 1uur_A oo  Len:  502  Start/End:  0,457
+
+//
+
+
+
+1mw4_A      GSP....... .......... .......... .......... .......... 
+1uur_A      SSPQPILDTI YKLLSEQEQT LVQMIHEQSL LLNRLPPTLD ENSLAPLKSL 
+
+1mw4_A      ......ASG. ..TSLSA... .......... .......... .......... 
+1uur_A      SQKQITLSGQ MNTEMSALDA TKKGMILEPT DLAKLFALKQ DLQIQFKQLS 
+
+1mw4_A      .......... .......... .......... .......... .......... 
+1uur_A      LLHNEIQSIL NPQHSAPKPN VALVLKSQPF PVVISKGKQL GENQLVVLVL 
+
+1mw4_A      .......... .......... .......... .......... .......... 
+1uur_A      TGARSNFHIN GPVKATMICD SHPPTTPLEM DSQPIYPATL TAHFPLKFLA 
+
+1mw4_A      .......... .......... .......... .......... .......... 
+1uur_A      GTRKCSVNLK FGVNIRDLDN VTTTVESDAS NPFVVITNEC QWEGSAGVLL 
+
+1mw4_A      .......... .......... .......... .......... .......... 
+1uur_A      KKDAFDGQLE ITWAQFINTL QRHFLIATKQ DPVRPKRPLS SYDLKYIQTH 
+
+1mw4_A      ......AIHR TQ.....LWF HGRISREESQ RLIG...QQG LV........ 
+1uur_A      FFGNRSIIHQ QDFDKFWVWF GKSMQTLRYQ RHISTLWQEG IIYGYMGRQE 
+
+1mw4_A      .........D GLFLVRESQR NPQGFVLSLC HLQ...KVKH YLILPSEEEG 
+1uur_A      VNDALQNQDP GTFIIRFSER NPGQFGIAYI GVEMPARIKH YLVQPNDTAA 
+
+1mw4_A      RLYFSMDDGQ TRFTDLLQLV EFHQLNRGIL PCLLRHCCTR V......... 
+1uur_A      AKK.TFPDFL SEHSQFVNLL QWTKDTNGAP RFLKLHKDTA LGSFAPKRTA 
+
+1mw4_A      .....AL
+1uur_A      PVPVGGX
+

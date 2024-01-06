@@ -1,0 +1,22 @@
+PileUp
+
+
+
+   MSF: 125  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1b7v_A oo  Len:  125  Start/End:  0,114
+ Name: 1fj0_A oo  Len:  125  Start/End:  0,114
+
+//
+
+
+
+1b7v_A      VDAEA..VVQ QKCISCHGGD ..LTGASAPA I......... .......... 
+1fj0_A      XDAKAGEAVF KQCMTCHRAD KNMVGPALAG VVGRKAGTAA GFTYSPLNHN 
+
+1b7v_A      .DKAGANYSE EEILDIILN. .......... .GQGGMPGGI AK.......G 
+1fj0_A      SGEAGLVWTA DNIVPYLADP NAFLKKFLTE KGKADQAVGV TKMTFKLANE 
+
+1b7v_A      AEAEAVAAWL AEKK
+1fj0_A      QQRKDVVAYL ATLK
+

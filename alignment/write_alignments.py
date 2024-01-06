@@ -52,6 +52,7 @@ if __name__ == '__main__':
         if not os.path.exists(msa_alignment_directory_aaembedding):
             os.makedirs(msa_alignment_directory_aaembedding)
 
+        # Loop to detect pairs of sequences
         for i in range(len(sequence_list)):
             for j in range(i+1,len(sequence_list)):
                 id1 = sequence_list[i].split('.')[0] 
@@ -63,8 +64,8 @@ if __name__ == '__main__':
                 blosum62_alignment = utils.align_sequences_biopython(raw_seq1, raw_seq2, penalty_params, blosum62_m,mode=args.alignmode)
                 
                 # EMBEDDING BASED ALIGNMENT
-                seq1 = embedding_alignment[0][0]
-                seq2 = embedding_alignment[0][1]
+                seq1 = embedding_alignment[0][0].replace('-', '.')
+                seq2 = embedding_alignment[0][1].replace('-', '.')
                 if args.alignmode == "global":
                     # In case of global alignment, beginning indices are 0 and end is the len
                     beg, end = [0, 0], [len(seq1), len(seq2)]
@@ -74,8 +75,8 @@ if __name__ == '__main__':
                 utils.write_msf(seq1=seq1,seq2=seq2,id1=id1,id2=id2,method = "embeddingmatrix",gopen=-11.0, gext=-1.0,path= msa_alignment_directory_aaembedding, beg=beg, end=end )
 
                 # BLOSUM ALIGNMENT
-                seq1 = blosum62_alignment[0][0]
-                seq2 = blosum62_alignment[0][1]
+                seq1 = blosum62_alignment[0][0].replace('-', '.')
+                seq2 = blosum62_alignment[0][1].replace('-', '.')
                 if args.alignmode == "global":
                     # In case of global alignment, beginning indices are 0 and end is the len
                     beg, end = [0, 0], [len(seq1), len(seq2)]
@@ -83,5 +84,4 @@ if __name__ == '__main__':
                     # TODO: local alignments
                     ...
                 utils.write_msf(seq1=seq1,seq2=seq2,id1=id1,id2=id2,method = "blosum62",gopen=-11.0, gext=-1.0,path= msa_alignment_directory_blosum, beg=beg, end=end )
-        break
     

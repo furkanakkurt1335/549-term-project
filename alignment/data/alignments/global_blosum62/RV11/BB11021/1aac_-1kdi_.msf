@@ -1,0 +1,22 @@
+PileUp
+
+
+
+   MSF: 129  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1aac_ oo  Len:  129  Start/End:  0,118
+ Name: 1kdi_ oo  Len:  129  Start/End:  0,118
+
+//
+
+
+
+1aac_      DKATIPSESP FAAAEVADGA IVVDIAKMKY ETPELHVKVG DTVTWINREA 
+1kdi_      .......... .AKVEVGD.. ...EVGNFKF YPDSITVSAG EAVEFTLVGE 
+
+1aac_      MPHNVHF..V AGVLGEAA.. LKGPMM.... ...KKEQAYS LTFTEAGTYD 
+1kdi_      TGHNIVFDIP AGAPGTVASE LKAASMDEND LLSEDEPSFK AKVSTPGTYT 
+
+1aac_      YHCTPHPF.. MRGKVVVE
+1kdi_      FYCTPHKSAN MKGTLTVK
+

@@ -1,0 +1,25 @@
+PileUp
+
+
+
+   MSF: 213  Type: P  Method: blosum62  Gopen: -11.0  Gext: -1.0
+
+ Name: 1ihv_A oo  Len:  213  Start/End:  0,194
+ Name: 1ycs_B oo  Len:  213  Start/End:  0,194
+
+//
+
+
+
+1ihv_A      .......... .....MIQN. .......... .......... .......... 
+1ycs_B      PLALLLDSSL EGEFDLVQRI IYEVDDPSLP NDEGITALHN AVCAGHTEIV 
+
+1ihv_A      .......... .......... .......... .......... ...FRVYYRD 
+1ycs_B      KFLVQFGVNV NAADSDGWTP LHCAASCNNV QVCKFLVESG AAVFAMTYSD 
+
+1ihv_A      SRDP...... .......... .......... .VWKGPAKLL W......... 
+1ycs_B      MQTAADKCEE MEEGYTQCSQ FLYGVQEKMG IMNKGVIYAL WDYEPQNDDE 
+
+1ihv_A      ....KGEGAV VI..QDNSDI K......... ..VVPRRKAK IIRD
+1ycs_B      LPMKEGDCMT IIHREDEDEI EWWWARLNDK EGYVPRNLLG LY.P
+
