@@ -1,6 +1,6 @@
 from Bio.Align import substitution_matrices
 from Bio import Align, SeqIO
-import json, argparse
+import json, argparse, os
 
 parser = argparse.ArgumentParser(description='Align two sequences')
 parser.add_argument('-m', '--matrix', help='our matrix to use for alignment', required=True)
@@ -40,10 +40,13 @@ def align_sequences_biopython(seq1, seq2, penalty_params, matrix, mode = 'global
 
 #seq1 = "PANAMABANANA"
 #seq2 = "PANKLBANA"
-seq1 = SeqIO.read("data\\sequences\\RV11\\BB11001\\1aab_.fa", "fasta")
-seq2 = SeqIO.read("data\\sequences\\RV11\\BB11001\\1j46_A.fa", "fasta")
+fa_dir = 'data/sequences/RV11/BB11001'
+seq1_file = os.path.join(fa_dir, '1aab_.fa')
+seq1 = SeqIO.read(seq1_file, "fasta")
+seq2_file = os.path.join(fa_dir, '1j46_A.fa')
+seq2 = SeqIO.read(seq2_file, "fasta")
 
-print("LINEAR PENALTY")
+print("Linear penalty")
 alignment = align_sequences_biopython(seq1, seq2, {"penalty_type": "linear", "gap_penalty": -8}, blosum62_m)
 print("Score: ", alignment.score)
 print("BLOSUM62")
@@ -62,7 +65,7 @@ print("Our matrix")
 print(alignment[0][0])
 print(alignment[0][1])
 
-print("\nAFFINE PENALTY")
+print("\nAffine Penalty")
 alignment = align_sequences_biopython(seq1, seq2, {"penalty_type": "affine", "gap_penalty": -10, "gap_extension_penalty": -1}, blosum62_m)
 print("Score: ", alignment.score)
 print("BLOSUM62")
