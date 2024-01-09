@@ -10,8 +10,6 @@ def parse_arguments():
     parser.add_argument("--simscalefactor", type=float,default=10.0)
     return parser.parse_args()
 
-def align_and_write_msf(seq1,seq2):
-    ...
 
 if __name__ == '__main__':
     args = parse_arguments()
@@ -70,8 +68,10 @@ if __name__ == '__main__':
                     # In case of global alignment, beginning indices are 0 and end is the len
                     beg, end = [0, 0], [len(seq1), len(seq2)]
                 elif args.alignmode == "local":
-                    # TODO: local alignments
-                    ...
+                    # beg & end indices according to biopython alignment.aligned property 
+                    beg = [embedding_alignment[0].aligned[0].ravel()[0],embedding_alignment[0].aligned[1].ravel()[0]] 
+                    end = [embedding_alignment[0].aligned[0].ravel()[-1],embedding_alignment[0].aligned[1].ravel()[-1]]
+
                 utils.write_msf(seq1=seq1,seq2=seq2,id1=id1,id2=id2,method = "embeddingmatrix",gopen=-11.0, gext=-1.0,path= msa_alignment_directory_aaembedding, beg=beg, end=end )
 
                 # BLOSUM ALIGNMENT
@@ -81,7 +81,8 @@ if __name__ == '__main__':
                     # In case of global alignment, beginning indices are 0 and end is the len
                     beg, end = [0, 0], [len(seq1), len(seq2)]
                 elif args.alignmode == "local":
-                    # TODO: local alignments
-                    ...
+                    # beg & end indices according to biopython alignment.aligned property 
+                    beg = [blosum62_alignment[0].aligned[0].ravel()[0], blosum62_alignment[0].aligned[1].ravel()[0] ]
+                    end = [blosum62_alignment[0].aligned[0].ravel()[-1], blosum62_alignment[0].aligned[1].ravel()[-1] ]
                 utils.write_msf(seq1=seq1,seq2=seq2,id1=id1,id2=id2,method = "blosum62",gopen=-11.0, gext=-1.0,path= msa_alignment_directory_blosum, beg=beg, end=end )
     
