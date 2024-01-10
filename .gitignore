@@ -3,3 +3,4 @@ alignment/benchmark_alignments_demo.ipynb
 __pycache__/
 alignment/data/alignments/
 protein_embeddings/inspect_embeddings.ipynb
+protein_embeddings/output_representations/
