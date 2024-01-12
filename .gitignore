@@ -1,7 +1,7 @@
+*.msf
 .venv/
 alignment/benchmark_alignments_demo.ipynb
 __pycache__/
-alignment/data/alignments/
 protein_embeddings/output_representations/
 alignment/repr*.txt
 alignment/alignment.msf
