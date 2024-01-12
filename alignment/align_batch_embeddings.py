@@ -85,8 +85,16 @@ def main():
                 path2_t = os.path.join(seq_dir, file2_t)
                 repr2 = get_local_representation(model, input_encoder, seq2_t, seq_len)
                 np.savetxt(repr2_path, repr2)
-                cmd_l = [python_path, script_path, '-f1', path1_t, '-f2', path2_t, '-e1', repr1_path, '-e2', repr2_path, '>', alignment_save_path]
-                os.system(' '.join(cmd_l))
+                cmd_l = [python_path, script_path, '-f1', path1_t, '-f2', path2_t, '-e1', repr1_path, '-e2', repr2_path]
+                output = subprocess.check_output(cmd_l, stderr=subprocess.STDOUT)
+                output = output.decode('utf-8')
+                with open(alignment_save_path, 'w') as f:
+                    f.write(output)
+                while 1:
+                    with open(alignment_save_path, 'r') as f:
+                        current_output = f.read()
+                    if current_output == output:
+                        break
                 ref_alignment_path1 = os.path.join(ref_dir, selected_set, box_t, '{}-{}.msf'.format(seq1_id, seq2_id))
                 ref_alignment_path2 = os.path.join(ref_dir, selected_set, box_t, '{}-{}.msf'.format(seq2_id, seq1_id))
                 if os.path.exists(ref_alignment_path1):
