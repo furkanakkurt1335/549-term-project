@@ -1,7 +1,7 @@
 # Example run can be made with the command:
 #   `python3 alignment/align_batch_embeddings.py -sj alignment/all_sequences.json -sd alignment/data/sequences -a alignment/data/alignments --set RV11 -scr alignment/peba/peba.py`
 
-import os, json, argparse, subprocess, sys, re
+import os, json, argparse, subprocess, sys, re, random
 from proteinbert import load_pretrained_model
 from proteinbert.conv_and_global_attention_model import get_model_with_hidden_layers_as_outputs
 import numpy as np
@@ -13,15 +13,22 @@ def get_args():
     parser.add_argument('-a', '--alignments', help='Path to alignments directory', required=True)
     parser.add_argument('--set', help='Set to align', required=True)
     parser.add_argument('-scr', '--script', help='Path to PEbA alignment script', required=True)
+    parser.add_argument('-l', '--limit', help='Limit number of sequences to align', type=int)
+    parser.add_argument('-d', '--dimension', help='Dimension of embeddings', type=int)
     return parser.parse_args()
 
-def get_local_representation(model, input_encoder, sequence, seq_len):
-    encoded_x = input_encoder.encode_X([sequence], seq_len)
-    local_representations, _ = model.predict(encoded_x, batch_size = 1, verbose = 0)
-    mask_to_exclude_special_tokens =  encoded_x[0][0] < 23
-    local_rep = local_representations[0][mask_to_exclude_special_tokens]
-    local_rep = local_rep[:, -154:-26]
-    return local_rep
+def get_local_representations(model, input_encoder, sequences, seq_name_l, seq_len, dim=None):
+    repr_d = {}
+    for seq_name in seq_name_l:
+        sequence = sequences[seq_name]
+        encoded_x = input_encoder.encode_X([sequence], seq_len)
+        local_representations, _ = model.predict(encoded_x, batch_size = 1, verbose = 0)
+        mask_to_exclude_special_tokens =  encoded_x[0][0] < 23
+        local_repr = local_representations[0][mask_to_exclude_special_tokens]
+        if dim:
+            local_repr = local_repr[:, -154:-26]
+        repr_d[seq_name] = local_repr
+    return repr_d
 
 def main():
     THIS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -58,6 +65,10 @@ def main():
         sps[selected_set] = {}
     for box_t in box_l:
         filtered_sequences = [seq for seq in sequences if seq.startswith('{}-{}'.format(selected_set, box_t))]
+        if args.limit and len(filtered_sequences) > args.limit:
+            filtered_sequences = random.sample(filtered_sequences, args.limit)
+        seq_name_l = filtered_sequences
+        repr_d = get_local_representations(model, input_encoder, sequences, seq_name_l, seq_len)
         if box_t not in sps[selected_set]:
             sps[selected_set][box_t] = {}
         for i, sequence1_name in enumerate(filtered_sequences):
@@ -70,11 +81,10 @@ def main():
             print('Aligning', sequence1_name)
             seq1_split = sequence1_name.split('-')
             seq1_id = seq1_split[-1]
-            seq1_t = sequences[sequence1_name]
             seq1_replaced = sequence1_name.replace('-', '/')
             file1_t = seq1_replaced + '.fa'
             path1_t = os.path.join(seq_dir, file1_t)
-            repr1 = get_local_representation(model, input_encoder, seq1_t, seq_len)
+            repr1 = repr_d[sequence1_name]
             np.savetxt(repr1_path, repr1)
             while 1:
                 current_repr1 = np.loadtxt(repr1_path)
@@ -86,11 +96,10 @@ def main():
                 print('with', sequence2_name)
                 seq2_split = sequence2_name.split('-')
                 seq2_id = seq2_split[-1]
-                seq2_t = sequences[sequence2_name]
                 seq2_replaced = sequence2_name.replace('-', '/')
                 file2_t = seq2_replaced + '.fa'
                 path2_t = os.path.join(seq_dir, file2_t)
-                repr2 = get_local_representation(model, input_encoder, seq2_t, seq_len)
+                repr2 = repr_d[sequence2_name]
                 np.savetxt(repr2_path, repr2)
                 while 1:
                     current_repr2 = np.loadtxt(repr2_path)
