@@ -62,6 +62,8 @@ def main():
         for i, sequence1_name in enumerate(filtered_sequences):
             if sequence1_name not in sps[selected_set][box_t]:
                 sps[selected_set][box_t][sequence1_name] = {}
+            elif set(sps[selected_set][box_t][sequence1_name].keys()) == set(filtered_sequences[i+1:]):
+                continue
             print('Aligning', sequence1_name)
             seq1_split = sequence1_name.split('-')
             seq1_id = seq1_split[-1]
@@ -72,8 +74,8 @@ def main():
             repr1 = get_local_representation(model, input_encoder, seq1_t, seq_len)
             np.savetxt(repr1_path, repr1)
             for sequence2_name in filtered_sequences[i+1:]:
-                if sequence2_name not in sps[selected_set][box_t][sequence1_name]:
-                    sps[selected_set][box_t][sequence1_name][sequence2_name] = {}
+                if sequence2_name in sps[selected_set][box_t][sequence1_name]:
+                    continue
                 print('with', sequence2_name)
                 seq2_split = sequence2_name.split('-')
                 seq2_id = seq2_split[-1]
@@ -102,6 +104,8 @@ def main():
                         json.dump(sps, f, indent=4)
                 else:
                     print('Error: no SP score found', sequence1_name, sequence2_name)
+            print('Finished aligning', sequence1_name)
+        print('Finished aligning box', box_t)
 
 if __name__ == '__main__':
     main()
