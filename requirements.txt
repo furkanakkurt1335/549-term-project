@@ -2,3 +2,4 @@ scikit-learn
 biopython
 pandas
 tensorflow
+torch
