@@ -34,7 +34,7 @@ if __name__ == '__main__':
     for msa in msas:
         print("ON MSA:", msa, index)
         index += 1
-        if index == 5:
+        if index == 4:
             break
         msa_path = os.path.join(balibase_ref_path,msa)
         sequence_list = os.listdir(msa_path)
