@@ -1,3 +1,6 @@
+# Example run can be made with the command:
+#   `python3 alignment/align_batch_embeddings.py -sj alignment/all_sequences.json -sd alignment/data/sequences -a alignment/data/alignments --set RV11 -scr alignment/peba/peba.py`
+
 import os, json, argparse, subprocess, sys, re
 from proteinbert import load_pretrained_model
 from proteinbert.conv_and_global_attention_model import get_model_with_hidden_layers_as_outputs
