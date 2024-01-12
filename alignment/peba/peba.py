@@ -103,9 +103,7 @@ def main():
 
     # Load numpy arrays  
     vecs1 = np.loadtxt(args.embed1)
-    vecs1 = vecs1[:,-154:-26] #last block
     vecs2 = np.loadtxt(args.embed2)
-    vecs2 = vecs2[:,-154:-26] 
 
     # Align and traceback
     score_m, trace_m = score_align(seq1, seq2, vecs1, vecs2, args.gopen, args.gext, args.align)

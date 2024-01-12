@@ -3,6 +3,7 @@ from Bio import Align, SeqIO
 from Bio.Align import substitution_matrices
 import subprocess
 import time
+import random
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
@@ -30,12 +31,10 @@ if __name__ == '__main__':
     if not os.path.exists(rep_peba_alignment_ref_path):
         os.makedirs(rep_peba_alignment_ref_path)
 
-    index = 0
     for msa in msas:
-        print("ON MSA:", msa, index)
-        index += 1
-        if index == 4:
-            break
+        print("ON MSA:", msa)
+        #if index == 4:
+        #    break
         msa_path = os.path.join(balibase_ref_path,msa)
         sequence_list = os.listdir(msa_path)
 
@@ -46,6 +45,9 @@ if __name__ == '__main__':
         # Loop to detect pairs of sequences
         for i in range(len(sequence_list)):
             for j in range(i+1,len(sequence_list)):
+                if random.random() > 0.037: # We want 15% of all pwas
+                    continue
+          
                 id1 = sequence_list[i].split('.')[0] 
                 id2 = sequence_list[j].split('.')[0]
                 seq1_path = os.path.join(msa_path,sequence_list[i])
@@ -68,9 +70,10 @@ if __name__ == '__main__':
                     print(f"Script failed with return code {return_code}")
 
                 # Optionally, you can capture and print the output and errors
-                output, errors = process.communicate()
-                print("Output:", output.decode("utf-8"))
-                print("Errors:", errors.decode("utf-8"))
+                #output, errors = process.communicate()
+                #print("Output:", output.decode("utf-8"))
+                #print("Errors:", errors.decode("utf-8"))
+   
         
     end_time = time.time()
     elapsed_time = end_time - start_time
