@@ -60,9 +60,11 @@ def main():
         if box_t not in sps[selected_set]:
             sps[selected_set][box_t] = {}
         for i, sequence1_name in enumerate(filtered_sequences):
-            if sequence1_name not in sps[selected_set][box_t]:
+            if i == len(filtered_sequences) - 1:
+                continue
+            elif sequence1_name not in sps[selected_set][box_t]:
                 sps[selected_set][box_t][sequence1_name] = {}
-            elif set(sps[selected_set][box_t][sequence1_name].keys()) == set(filtered_sequences[i+1:]):
+            if set(sps[selected_set][box_t][sequence1_name].keys()) == set(filtered_sequences[i+1:]):
                 continue
             print('Aligning', sequence1_name)
             seq1_split = sequence1_name.split('-')
@@ -73,6 +75,10 @@ def main():
             path1_t = os.path.join(seq_dir, file1_t)
             repr1 = get_local_representation(model, input_encoder, seq1_t, seq_len)
             np.savetxt(repr1_path, repr1)
+            while 1:
+                current_repr1 = np.loadtxt(repr1_path)
+                if np.array_equal(current_repr1, repr1):
+                    break
             for sequence2_name in filtered_sequences[i+1:]:
                 if sequence2_name in sps[selected_set][box_t][sequence1_name]:
                     continue
@@ -85,6 +91,10 @@ def main():
                 path2_t = os.path.join(seq_dir, file2_t)
                 repr2 = get_local_representation(model, input_encoder, seq2_t, seq_len)
                 np.savetxt(repr2_path, repr2)
+                while 1:
+                    current_repr2 = np.loadtxt(repr2_path)
+                    if np.array_equal(current_repr2, repr2):
+                        break
                 cmd_l = [python_path, script_path, '-f1', path1_t, '-f2', path2_t, '-e1', repr1_path, '-e2', repr2_path]
                 output = subprocess.check_output(cmd_l, stderr=subprocess.STDOUT)
                 output = output.decode('utf-8')
@@ -113,7 +123,10 @@ def main():
                 else:
                     print('Error: no SP score found', sequence1_name, sequence2_name)
             print('Finished aligning', sequence1_name)
+            print('Remaining:', len(filtered_sequences) - i - 1, 'sequences')
         print('Finished aligning box', box_t)
+        print('Remaining:', len(box_l) - box_l.index(box_t) - 1, 'boxes')
+    print('Finished aligning set', selected_set)
 
 if __name__ == '__main__':
     main()
