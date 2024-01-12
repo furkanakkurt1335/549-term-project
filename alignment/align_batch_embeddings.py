@@ -20,6 +20,7 @@ def get_local_representation(model, input_encoder, sequence, seq_len):
     local_representations, _ = model.predict(encoded_x, batch_size = 1, verbose = 0)
     mask_to_exclude_special_tokens =  encoded_x[0][0] < 23
     local_rep = local_representations[0][mask_to_exclude_special_tokens]
+    local_rep = local_rep[:, -154:-26]
     return local_rep
 
 def main():
@@ -130,6 +131,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
