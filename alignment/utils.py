@@ -3,7 +3,7 @@ from Bio.Align import substitution_matrices
 from Bio import Align, SeqIO
 import json, argparse
 
-# Taken from: https://github.com/mgtools/PEbA/blob/master/scripts/utility.py
+# write_msf is taken from: https://github.com/mgtools/PEbA/blob/master/scripts/utility.py
 def write_msf(seq1: str, seq2: str, id1: str, id2: str, method: str,
                gopen: float, gext: float, path: str, beg: list, end: list):
     """Writes alignment to file in msf format
