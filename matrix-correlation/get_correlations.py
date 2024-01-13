@@ -1,6 +1,5 @@
 from Bio.Align import substitution_matrices
-import json, argparse
-import numpy as np
+import json, argparse, random
 from scipy.stats import pearsonr
 
 parser = argparse.ArgumentParser(description='Align two sequences')
@@ -20,6 +19,7 @@ pam250_m = substitution_matrices.load("PAM250") # Load the PAM250 matrix
 blosum62_l = []
 our_l = []
 pam250_l = []
+random_l = []
 for i in range(len(aa_l)):
     for j in range(len(aa_l)):
         try:
@@ -28,11 +28,14 @@ for i in range(len(aa_l)):
             blosum62_l.append(blosum62_m[aa_l[i], aa_l[j]])
             pam250_l.append(pam250_m[aa_l[i], aa_l[j]])
             our_l.append(m[i][j])
+            random_l.append(random.random())
         except:
             pass
 print("Pearson correlation between our matrix and BLOSUM62:", '%.3f' % pearsonr(blosum62_l, our_l)[0])
 print("Pearson correlation between our matrix and PAM250:", '%.3f' % pearsonr(pam250_l, our_l)[0])
 print("Pearson correlation between BLOSUM62 and PAM250:", '%.3f' % pearsonr(blosum62_l, pam250_l)[0])
+print("Pearson correlation between BLOSUM62 and random:", '%.3f' % pearsonr(blosum62_l, random_l)[0])
 # Pearson correlation between our matrix and BLOSUM62: 0.862
 # Pearson correlation between our matrix and PAM250: 0.690
 # Pearson correlation between BLOSUM62 and PAM250: 0.840
+# Pearson correlation between BLOSUM62 and random: -0.006
